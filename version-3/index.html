@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Noche De Código</title>
+  <link rel="stylesheet" href="./scss/styles.scss">
+  <link rel="stylesheet" href="./css/styles.css">
+
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+
+</head>
+<body>
+  <header class="header__principal">
+    <div class="logo">
+      <img src="./img/logo.png" alt="">
+      <h1>NOCHE DE CÓDIGO</h1>
+    </div>
+
+    <nav class="menu">
+      <ul class="menu__links">
+
+        <li class="menu__item">
+          <a href="#" class="menu__link">Inicio</a>
+        </li>
+
+        <li class="menu__item menu__item--show">
+          <a href="#" class="menu__link">Lenguajes <img src="./img/arrow.svg" class="menu__arrow" /></a>
+          <ul class="menu__nesting">
+            <li class="menu__inside">
+              <a href="#" class="menu__link menu__link--inside">HTML</a>
+            </li>
+            <li class="menu__inside">
+              <a href="#" class="menu__link menu__link--inside">CSS</a>
+            </li>
+            <li class="menu__inside">
+              <a href="#" class="menu__link menu__link--inside">JavaScript</a>
+            </li>
+            <li class="menu__inside">
+              <a href="#" class="menu__link menu__link--inside">React</a>
+            </li>
+            <li class="menu__inside">
+              <a href="#" class="menu__link menu__link--inside">Bootstrap</a>
+            </li>
+          </ul>
+        </li>
+
+        <li class="menu__item menu__item--show">
+          <a href="#" class="menu__link">Etiquetas <img src="./img/arrow.svg" class="menu__arrow" /></a>
+
+          <ul class="menu__nesting">
+            <li class="menu__inside">
+              <a href="#" class="menu__link menu__link--inside">HTML</a>
+            </li>
+            <li class="menu__inside">
+              <a href="#" class="menu__link menu__link--inside">CSS</a>
+            </li>
+            <li class="menu__inside">
+              <a href="#" class="menu__link menu__link--inside">JavaScript</a>
+            </li>
+          </ul>
+        </li>
+
+        <li class="menu__item">
+          <a href="#" class="menu__link">Libros&&Enlaces <img src="./img/arrow.svg" class="menu__arrow" /></a>
+          <ul class="menu__nesting">
+            <li class="menu__inside">
+              <a href="#" class="menu__link menu__link--inside">HTML</a>
+            </li>
+            <li class="menu__inside">
+              <a href="#" class="menu__link menu__link--inside">CSS</a>
+            </li>
+            <li class="menu__inside">
+              <a href="#" class="menu__link menu__link--inside">JavaScript</a>
+            </li>
+          </ul>
+        </li>
+      </ul>
+    </nav>
+
+    <form id="searchContent">
+      <input type="text" id="search" placeholder="Buscar...">
+      <button type="button" id="searchBtn"><i class="large material-icons">search</i></button>
+    </form>
+
+  </header>
+
+
+
+  <script src="./js/main.js"></script>
+</body>
+</html>

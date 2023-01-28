@@ -1,0 +1,131 @@
+@import url("https://fonts.googleapis.com/css2?family=Dosis:wght@400;500;700;800&family=Montserrat:wght@400;500;600;700;900&family=Source+Sans+Pro:wght@400;600;700;900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Source Sans Pro", sans-serif;
+}
+
+body {
+  background-color: #eee;
+}
+
+.header__principal {
+  padding: 15px 50px 15px 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #171433;
+}
+.header__principal .logo {
+  text-align: center;
+  flex-wrap: wrap;
+}
+.header__principal .logo img {
+  width: 50px;
+  height: 50px;
+}
+.header__principal .logo h1 {
+  font-weight: 600;
+  font-size: 22px;
+  color: #eee;
+}
+.header__principal .menu {
+  color: #eee;
+  height: 70px;
+}
+.header__principal .menu .menu__links {
+  height: 100%;
+  transition: transform 0.5s;
+  display: flex;
+}
+.header__principal .menu .menu__links .menu__item {
+  list-style: none;
+  position: relative;
+  height: 100%;
+  --clip: polygon(0 0, 100% 0, 100% 0, 0 0);
+  --transform: rotate(-90deg);
+}
+.header__principal .menu .menu__links .menu__item .menu__link {
+  color: #eee;
+  text-decoration: none;
+  padding: 0 30px;
+  display: flex;
+  height: 100%;
+  align-items: center;
+}
+.header__principal .menu .menu__links .menu__item .menu__link:hover {
+  background-color: #285d68;
+}
+.header__principal .menu .menu__links .menu__item .menu__arrow {
+  transform: var(--transform);
+  transition: transform 0.3s;
+  display: block;
+  margin-left: 3px;
+}
+.header__principal .menu .menu__links .menu__item .menu__nesting {
+  list-style: none;
+  transition: clip-path 0.3s;
+  clip-path: var(--clip);
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  width: max-content;
+  transform: translateY(100%);
+  background-color: #171433;
+}
+.header__principal .menu .menu__links .menu__item .menu__nesting .menu__inside .menu__link--inside {
+  padding: 30px 100px 30px 20px;
+}
+.header__principal .menu .menu__links .menu__item .menu__nesting .menu__inside .menu__link--inside:hover {
+  background-color: #285d68;
+}
+.header__principal .menu .menu__links .menu__item:hover {
+  --clip: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+  --transform: rotate(0);
+}
+.header__principal #searchContent {
+  display: block;
+  position: relative;
+  padding: 3px 20px;
+  width: 300px;
+}
+.header__principal #searchContent #search {
+  padding: 10px;
+  border: none;
+  font-size: 15px;
+  background-color: #eee;
+  border: 1px solid #285d68;
+  border-radius: 20px;
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+  width: 80%;
+  border-right: 1px solid #4ae385;
+  float: left;
+}
+.header__principal #searchContent #search:focus {
+  outline: none;
+}
+.header__principal #searchContent #search::placeholder {
+  align-items: center;
+}
+.header__principal #searchContent #searchBtn {
+  width: 20%;
+  text-align: center;
+  height: 40px;
+  padding: 8px;
+  background-color: #4ae385;
+  color: #171433;
+  border-radius: 20px;
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+  border: 1px solid #171433;
+  border-left: none;
+  float: left;
+  cursor: pointer;
+}
+.header__principal #searchContent #searchBtn:hover {
+  background-color: #46b572;
+}
+
+/*# sourceMappingURL=styles.css.map */
